@@ -14,7 +14,7 @@
     "babel-loader": "^8.1.0",
     "serve": "^11.3.2",
     "vue": "^3.0.11",
-    "@cloudbees/vuera": "^0.2.7",
+    "vuera": "^0.2.7",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
