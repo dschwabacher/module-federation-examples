@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import SpecialButton from "./SpecialButton";
-import { VueInReact } from 'vuera';
+import { VueInReact, VueWrapper } from 'vuera';
 
 
 (async function loadModule() {
-    const module = await import("home/RenderedButton");
-    console.log(module.default);
-    const Component = VueInReact(module.default);
+    const module = await import("home/Content");
+    // console.log(module.default);
+    //const Component = VueInReact(module.default);
+    //console.log("component is: " + Component);
     const element = <>
     <div>
         <h1>This is a React app!</h1>
@@ -15,10 +16,16 @@ import { VueInReact } from 'vuera';
         title={"React button"}
         ></SpecialButton>
         <h1>Vue Component running inside of a React app:</h1>
-        <Component></Component>
+        <VueWrapper
+            component={module}
+        >
+        </VueWrapper>
     </div>
     </>
     ReactDOM.render(element, document.getElementById('root'));
+    // const x = Component();
+    // ReactDOM.render(x, document.getElementById('root'));
+    const z = 0;
 })();
 
 // await loadModule();

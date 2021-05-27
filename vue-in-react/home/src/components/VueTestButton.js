@@ -1,4 +1,5 @@
-import Vue from 'vue';
+// import Vue from 'vue';
+// import { render, h } from "vue";
 
 const VueTestButton = Vue.component('button-counter', {
   data: function () {
