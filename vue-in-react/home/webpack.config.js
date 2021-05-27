@@ -66,7 +66,9 @@ module.exports = (env = {}) => ({
       },
       exposes: {
         "./Content": "./src/components/Content",
-        "./Button": "./src/components/Button"
+        "./Button": "./src/components/Button",
+        "./VueTestButton": "./src/components/VueTestButton",
+        "./RenderedButton": "./src/components/RenderedButton"
       },
     }),
     new HtmlWebpackPlugin({

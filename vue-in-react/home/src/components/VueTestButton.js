@@ -1,7 +1,6 @@
 import Vue from 'vue';
 
-// Define a new component called button-counter
-const x = Vue.component('button-counter', {
+const VueTestButton = Vue.component('button-counter', {
   data: function () {
     return {
       count: 0
@@ -10,4 +9,4 @@ const x = Vue.component('button-counter', {
   template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
 });
 
-export default x;
+export default VueTestButton;
